@@ -8,6 +8,7 @@
 #include "GPIO.h"
 #include "CLOCK.h"
 #include "EXTI.h"
+#include "SYSTICK.h"
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -90,6 +91,14 @@ typedef struct
   unsigned char RESERVED_5[2576];
   volatile  unsigned int STIR;          
 } NVIC_Typedef;
+
+typedef struct
+{
+	uint32_t SYST_CSR;
+	uint32_t SYST_RVR;
+	uint32_t SYST_CVR;
+	uint32_t SYST_CALIB;
+}Systick_typedef;
 
 
 /*================================================================================================*/
@@ -197,6 +206,7 @@ typedef enum
 #define EXTI_BASE_ADDRESS 			((uint32_t)0x40010400u)
 #define AFIO_BASE_ADDRESS 			((uint32_t)0x40010000u)
 #define NVIC_BASE_ADDRESS       ((uint32_t)0xE000E100u)
+#define SYSTICK_BASE_ADDRESS    ((uint32_t)0xE000E010u)
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -212,9 +222,15 @@ typedef enum
 #define GPIO_E 	((GPIO_typedef*)GPIOE_BASE_ADDRESS)
 #define GPIO_F 	((GPIO_typedef*)GPIOF_BASE_ADDRESS)
 #define GPIO_G 	((GPIO_typedef*)GPIOG_BASE_ADDRESS)
-#define NVIC 		((NVIC_Typedef*)NVIC_BASE_ADDRESS)
+
 /*================================================================================================*/
 
+/*==================================================================================================
+*                                        CORE ADDRESS
+==================================================================================================*/
+#define NVIC 				((NVIC_Typedef*)NVIC_BASE_ADDRESS)
+#define SYSTICK 		((Systick_typedef*)SYSTICK_BASE_ADDRESS)
+/*================================================================================================*/
 
 #endif
 

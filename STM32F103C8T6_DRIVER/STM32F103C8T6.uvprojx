@@ -447,6 +447,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>SYSTICK</GroupName>
+          <Files>
+            <File>
+              <FileName>SYSTICK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SYSTICK.c</FilePath>
+            </File>
+            <File>
+              <FileName>SYSTICK.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SYSTICK.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
