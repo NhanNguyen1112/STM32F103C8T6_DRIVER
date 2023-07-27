@@ -22,16 +22,42 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\CODE\STM\STM32F103C8T6_DRIVER\STM32F103C8T6.uvprojx
-Project File Date:  07/24/2023
+Project File Date:  07/27/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
+main.c(2): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(16): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+main.c(2): warning: In file included from...
+./STM32F103C8T6_Register.h(129): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        Alternate_OpenDrain,
+                           ^
+main.c(23): warning: // comments are not allowed in this language [-Wcomment]
+        // Init_Button_PA1();
+        ^
+3 warnings generated.
 compiling main.c...
+GPIO.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(16): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+GPIO.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(129): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        Alternate_OpenDrain,
+                           ^
+2 warnings generated.
+compiling GPIO.c...
 linking...
-Program Size: Code=1128 RO-data=252 RW-data=0 ZI-data=1640  
+Program Size: Code=3444 RO-data=252 RW-data=0 ZI-data=1640  
 FromELF: creating hex file...
-".\Objects\STM32F103C8T6.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\STM32F103C8T6.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -58,10 +84,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
       Source file:   Device/Source/ARM/startup_stm32f10x_md.s
       Include file:  RTE_Driver/Config/RTE_Device.h
-      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/system_stm32f10x.c
 Build Time Elapsed:  00:00:00
 </pre>
 </body>

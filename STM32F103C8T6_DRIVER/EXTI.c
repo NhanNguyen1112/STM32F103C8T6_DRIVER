@@ -31,11 +31,11 @@ void Demo_Button_Led(void)
 {
 	if(flag==1)
 	{
-		Set_Pin_GPIO(&GPIO_C->GPIO_ODR,PIN13,LOW);
+		//Set_Pin_GPIO(&GPIO_C->GPIO_ODR,PIN13,LOW);
 	}
 	else 
 	{
-		Set_Pin_GPIO(&GPIO_C->GPIO_ODR,PIN13,HIGH);
+		//Set_Pin_GPIO(&GPIO_C->GPIO_ODR,PIN13,HIGH);
 	}
 }
 

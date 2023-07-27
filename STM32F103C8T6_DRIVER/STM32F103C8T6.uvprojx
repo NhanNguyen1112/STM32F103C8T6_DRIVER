@@ -462,6 +462,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Softtimer</GroupName>
+          <Files>
+            <File>
+              <FileName>Softtimer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Softtimer.h</FilePath>
+            </File>
+            <File>
+              <FileName>Softtimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Softtimer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>

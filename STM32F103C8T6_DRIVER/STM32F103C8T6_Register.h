@@ -9,6 +9,7 @@
 #include "CLOCK.h"
 #include "EXTI.h"
 #include "SYSTICK.h"
+#include "Softtimer.h"
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -41,6 +42,8 @@ typedef struct
 	uint32_t RCC_APB1ENR;
 	uint32_t RCC_BDCR;
 	uint32_t RCC_CSR;
+	uint32_t RCC_AHBRSTR;
+	uint32_t RCC_CFGR2;
 }rcc_typedef;
 
 typedef struct 
@@ -121,7 +124,9 @@ typedef enum
 typedef enum 
 {
 	PushPull,
-	OpenDrain
+	OpenDrain,
+	Alternate_PushPull,
+	Alternate_OpenDrain,
 }OutputMode_enum;
 
 typedef enum 
@@ -130,6 +135,30 @@ typedef enum
 	FloatingInput,
 	InputPullUp_PullDown
 }InputMode_enum;
+
+typedef enum 
+{
+	No,
+	PullUp,
+	PullDown
+}UpDown_typedef;
+
+typedef enum 
+{
+	OUTPUT,
+	INPUT
+}PinMode_typdef;
+
+typedef enum 
+{
+	PORTA,
+	PORTB,
+	PORTC,
+	PORTD,
+	PORTE,
+	PORTF,
+	PORTG
+}PORT_typedef;
 
 typedef enum
 {
@@ -207,6 +236,7 @@ typedef enum
 #define AFIO_BASE_ADDRESS 			((uint32_t)0x40010000u)
 #define NVIC_BASE_ADDRESS       ((uint32_t)0xE000E100u)
 #define SYSTICK_BASE_ADDRESS    ((uint32_t)0xE000E010u)
+
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -230,6 +260,7 @@ typedef enum
 ==================================================================================================*/
 #define NVIC 				((NVIC_Typedef*)NVIC_BASE_ADDRESS)
 #define SYSTICK 		((Systick_typedef*)SYSTICK_BASE_ADDRESS)
+
 /*================================================================================================*/
 
 #endif

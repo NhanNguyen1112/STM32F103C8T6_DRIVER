@@ -4,7 +4,7 @@
 
 #include "STM32F103C8T6_Register.h"
 
-void SysTickDelay(const unsigned int Second);
+void SysTickDelay(const unsigned int MiliSecond);
 
 #endif
 
