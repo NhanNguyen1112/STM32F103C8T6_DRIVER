@@ -10,6 +10,7 @@
 #include "EXTI.h"
 #include "SYSTICK.h"
 #include "Softtimer.h"
+#include "Timer.h"
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -20,6 +21,7 @@
 #define READBIT(REG,BIT) ((REG) & (1<<BIT))
 #define SETALL(REG) ((REG) |= (0xFFFFFFFF))
 #define CLEARALL(REG) ((REG) &= (0x00000000))
+
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -141,13 +143,13 @@ typedef enum
 	No,
 	PullUp,
 	PullDown
-}UpDown_typedef;
+}UpDown_enum;
 
 typedef enum 
 {
 	OUTPUT,
 	INPUT
-}PinMode_typdef;
+}PinMode_enum;
 
 typedef enum 
 {
@@ -158,7 +160,7 @@ typedef enum
 	PORTE,
 	PORTF,
 	PORTG
-}PORT_typedef;
+}PORT_enum;
 
 typedef enum
 {

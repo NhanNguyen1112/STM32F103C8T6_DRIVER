@@ -5,7 +5,7 @@ void SysTickDelay(const unsigned int MiliSecond)
 {
 	unsigned int i=0;
 	
-  SYSTICK->SYST_RVR = (uint32_t)(72000u); /* Set reload value */
+  SYSTICK->SYST_RVR = (uint32_t)(72000u-1u); /* Set reload value */
 
   SYSTICK->SYST_CVR = (uint32_t)(0u); /* Clear current value */
 

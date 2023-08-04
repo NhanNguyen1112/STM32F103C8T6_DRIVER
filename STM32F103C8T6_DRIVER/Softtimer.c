@@ -7,24 +7,48 @@ static Softtimer TIMER[Total_Timer];
 
 void Function_PC13(void)
 {
-  //Toggle_Pin(&GPIO_C->GPIO_ODR,PIN13);
+	TogglePin(PORTC,PIN13);
 }
 
 void Function_PB5(void)
 {
-  //Toggle_Pin(&GPIO_B->GPIO_ODR,PIN5);
+  TogglePin(PORTB,PIN5);
 }
 
 void Function_PB6(void)
 {
-  //Toggle_Pin(&GPIO_B->GPIO_ODR,PIN6);
+  TogglePin(PORTB,PIN6);
+}
+
+void Main_Function(void)
+{
+  InitClockHSE();
+	Enable_Disable_Clock_PortC(Enable);
+	Enable_Disable_Clock_PortB(Enable);
+	Enable_Disable_Clock_PortA(Enable);
+	
+	SetPinInput(PORTA,PIN1,InputPullUp_PullDown,PullUp);
+	SetPinOutput(PORTC,PIN13,0);
+	SetPinOutput(PORTB,PIN5,0);
+	SetPinOutput(PORTB,PIN6,0);
+
+	Softtimer_Init();
+	
+	Softtimer_StartTimer(0,10,ONESHOT,&Function_PC13);
+	Softtimer_StartTimer(1,5,CONTINUE,&Function_PB5);
+	Softtimer_StartTimer(2,50,CONTINUE,&Function_PB6);
+
+	while(1)
+	{
+		Softtimer_MainFunction();
+	}
 }
 
 void Softtimer_Init(void)
 {
   TimeCountMs = 0;
 
-  SYSTICK->SYST_RVR = (uint32_t)(7200000u); /* Set reload value */
+  SYSTICK->SYST_RVR = (uint32_t)(7200000u-1u); /* Set reload value */
 
   SYSTICK->SYST_CVR = (uint32_t)(0u); /* Clear current value */
 

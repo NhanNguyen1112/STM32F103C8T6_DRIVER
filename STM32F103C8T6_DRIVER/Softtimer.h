@@ -6,7 +6,10 @@
 
 #define Total_Timer 5
 
+#ifndef _CALLBACK_
+#define _CALLBACK_
 typedef void (*CALLBACK)(void);
+#endif
 
 typedef enum 
 {
@@ -28,6 +31,7 @@ extern volatile unsigned int TimeCountMs;
 void Function_PC13(void);
 void Function_PB5(void);
 void Function_PB6(void);
+void Main_Function(void);
 
 void Softtimer_Init(void);
 void Softtimer_StartTimer(unsigned int TimerID,unsigned int TimeoutValue,unsigned char Mode,CALLBACK callback);

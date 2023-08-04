@@ -31,7 +31,9 @@ void InitClockHSE(void)
 	RCC->RCC_CFGR  |= (7u<<18);     /* PLLMUL X9 */
   #endif
   
-  RCC->RCC_CFGR &= ~(1u<<10u);  /* PPRE2 APB1 not divided */
+  //RCC->RCC_CFGR &= ~(1u<<10u);  /* PPRE2 APB1 not divided */
+  RCC->RCC_CFGR |= (4u<<10u);   /* PPRE2 APB1 /2 */
+
   RCC->RCC_CFGR &= ~(1u<<13u);  /* PPRE2 APB2 not divided */
   RCC->RCC_CFGR &= ~(0xFu<<4u); /* HPRE AHB prescaler not divided */
 	

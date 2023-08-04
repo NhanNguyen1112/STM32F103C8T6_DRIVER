@@ -477,6 +477,26 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>TIMER</GroupName>
+          <Files>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Timer_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>

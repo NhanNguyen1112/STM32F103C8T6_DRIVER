@@ -1,53 +1,76 @@
 Dependencies for Project 'STM32F103C8T6', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6190000::V6.19::ARMCLANG
-F (.\main.c)(0x64C28581)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
-I (STM32F103C8T6_Register.h)(0x64C28233)
+F (.\main.c)(0x64CC849A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
 I (GPIO.h)(0x64C2846E)
 I (CLOCK.h)(0x64C1D90A)
 I (EXTI.h)(0x64BE9D0E)
 I (SYSTICK.h)(0x64C254B9)
-I (Softtimer.h)(0x64C23E60)
-F (.\STM32F103C8T6_Register.h)(0x64C28233)()
+I (Softtimer.h)(0x64CBB69A)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
+F (.\STM32F103C8T6_Register.h)(0x64CBB630)()
 F (.\GPIO.c)(0x64C28561)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/gpio.o -MD)
 I (GPIO.h)(0x64C2846E)
-I (STM32F103C8T6_Register.h)(0x64C28233)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
 I (CLOCK.h)(0x64C1D90A)
 I (EXTI.h)(0x64BE9D0E)
 I (SYSTICK.h)(0x64C254B9)
-I (Softtimer.h)(0x64C23E60)
+I (Softtimer.h)(0x64CBB69A)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
 F (.\GPIO.h)(0x64C2846E)()
-F (.\CLOCK.c)(0x64C1D81A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/clock.o -MD)
+F (.\CLOCK.c)(0x64CBBD76)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/clock.o -MD)
 I (CLOCK.h)(0x64C1D90A)
-I (STM32F103C8T6_Register.h)(0x64C28233)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
 I (GPIO.h)(0x64C2846E)
 I (EXTI.h)(0x64BE9D0E)
 I (SYSTICK.h)(0x64C254B9)
-I (Softtimer.h)(0x64C23E60)
+I (Softtimer.h)(0x64CBB69A)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
 F (.\CLOCK.h)(0x64C1D90A)()
 F (.\EXTI.c)(0x64C27D33)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/exti.o -MD)
 I (EXTI.h)(0x64BE9D0E)
-I (STM32F103C8T6_Register.h)(0x64C28233)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
 I (GPIO.h)(0x64C2846E)
 I (CLOCK.h)(0x64C1D90A)
 I (SYSTICK.h)(0x64C254B9)
-I (Softtimer.h)(0x64C23E60)
+I (Softtimer.h)(0x64CBB69A)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
 F (.\EXTI.h)(0x64BE9D0E)()
-F (.\SYSTICK.c)(0x64C1DB18)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/systick.o -MD)
+F (.\SYSTICK.c)(0x64CB1A52)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/systick.o -MD)
 I (SYSTICK.h)(0x64C254B9)
-I (STM32F103C8T6_Register.h)(0x64C28233)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
 I (GPIO.h)(0x64C2846E)
 I (CLOCK.h)(0x64C1D90A)
 I (EXTI.h)(0x64BE9D0E)
-I (Softtimer.h)(0x64C23E60)
+I (Softtimer.h)(0x64CBB69A)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
 F (.\SYSTICK.h)(0x64C254B9)()
-F (.\Softtimer.h)(0x64C23E60)()
-F (.\Softtimer.c)(0x64C27D16)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/softtimer.o -MD)
-I (Softtimer.h)(0x64C23E60)
-I (STM32F103C8T6_Register.h)(0x64C28233)
+F (.\Softtimer.h)(0x64CBB69A)()
+F (.\Softtimer.c)(0x64CB1C91)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/softtimer.o -MD)
+I (Softtimer.h)(0x64CBB69A)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
 I (GPIO.h)(0x64C2846E)
 I (CLOCK.h)(0x64C1D90A)
 I (EXTI.h)(0x64BE9D0E)
 I (SYSTICK.h)(0x64C254B9)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
+F (.\Timer.c)(0x64CCC61D)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
+I (Timer.h)(0x64CC850C)
+I (Timer_Register.h)(0x64CBAF83)
+I (STM32F103C8T6_Register.h)(0x64CBB630)
+I (GPIO.h)(0x64C2846E)
+I (CLOCK.h)(0x64C1D90A)
+I (EXTI.h)(0x64BE9D0E)
+I (SYSTICK.h)(0x64C254B9)
+I (Softtimer.h)(0x64CBB69A)
+F (.\Timer.h)(0x64CC850C)()
+F (.\Timer_Register.h)(0x64CBAF83)()
 F (RTE/Device/STM32F103C8/RTE_Device.h)(0x5FC05DFA)()
 F (RTE/Device/STM32F103C8/startup_stm32f10x_md.s)(0x61AD876E)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F10X_MD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f10x_md.o)
 F (RTE/Device/STM32F103C8/system_stm32f10x.c)(0x61AD876E)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/system_stm32f10x.o -MD)
