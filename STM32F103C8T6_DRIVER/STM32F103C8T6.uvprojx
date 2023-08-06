@@ -382,22 +382,17 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Src</GroupName>
-          <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Inc</GroupName>
+          <GroupName>Main</GroupName>
           <Files>
             <File>
               <FileName>STM32F103C8T6_Register.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\STM32F103C8T6_Register.h</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -414,6 +409,11 @@
               <FileType>5</FileType>
               <FilePath>.\GPIO.h</FilePath>
             </File>
+            <File>
+              <FileName>Gpio_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Gpio_Register.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -428,6 +428,11 @@
               <FileName>CLOCK.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\CLOCK.h</FilePath>
+            </File>
+            <File>
+              <FileName>Clock_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Clock_Register.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -444,11 +449,26 @@
               <FileType>5</FileType>
               <FilePath>.\EXTI.h</FilePath>
             </File>
+            <File>
+              <FileName>EXTI_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\EXTI_Register.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>SYSTICK</GroupName>
           <Files>
+            <File>
+              <FileName>Softtimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Softtimer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Softtimer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Softtimer.h</FilePath>
+            </File>
             <File>
               <FileName>SYSTICK.c</FileName>
               <FileType>1</FileType>
@@ -459,20 +479,10 @@
               <FileType>5</FileType>
               <FilePath>.\SYSTICK.h</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Softtimer</GroupName>
-          <Files>
             <File>
-              <FileName>Softtimer.h</FileName>
+              <FileName>SYSTICK_Register.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Softtimer.h</FilePath>
-            </File>
-            <File>
-              <FileName>Softtimer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Softtimer.c</FilePath>
+              <FilePath>.\SYSTICK_Register.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -493,6 +503,66 @@
               <FileName>Timer_Register.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Timer_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USART</GroupName>
+          <Files>
+            <File>
+              <FileName>USART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USART.c</FilePath>
+            </File>
+            <File>
+              <FileName>USART.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USART.h</FilePath>
+            </File>
+            <File>
+              <FileName>USART_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USART_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>NVIC</GroupName>
+          <Files>
+            <File>
+              <FileName>NVIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\NVIC.c</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\NVIC.h</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\NVIC_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>I2C</GroupName>
+          <Files>
+            <File>
+              <FileName>I2C.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\I2C.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\I2C_Register.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\I2C.c</FilePath>
             </File>
           </Files>
         </Group>

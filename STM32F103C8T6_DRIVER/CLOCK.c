@@ -20,9 +20,19 @@ void InitClockHSE(void)
 
   RCC->RCC_CFGR  |= (1<<16);    /* PLLSRC set FREDIV1 */
   
+  /* Set PLLMUL */
   RCC->RCC_CFGR  &= ~(0xFu<<18);  /* PLLMUL set not divided */
   #ifdef PLLMUL_X4
   RCC->RCC_CFGR  |= (2u<<18);   /* PLLMUL X4 */
+  #endif
+  #ifdef PLLMUL_X5
+  RCC->RCC_CFGR  |= (3u<<18);   /* PLLMUL X5 */
+  #endif
+  #ifdef PLLMUL_X6
+  RCC->RCC_CFGR  |= (4u<<18);   /* PLLMUL X6 */
+  #endif
+  #ifdef PLLMUL_X7
+  RCC->RCC_CFGR  |= (5u<<18);   /* PLLMUL X7 */
   #endif
   #ifdef PLLMUL_X8
   RCC->RCC_CFGR  |= (6u<<18);   /* PLLMUL X8 */
@@ -30,12 +40,66 @@ void InitClockHSE(void)
   #ifdef PLLMUL_X9
 	RCC->RCC_CFGR  |= (7u<<18);     /* PLLMUL X9 */
   #endif
+  #ifdef PLLMUL_X6_5
+  RCC->RCC_CFGR  |= (13u<<18);   /* PLLMUL X6.5 */
+  #endif
   
-  //RCC->RCC_CFGR &= ~(1u<<10u);  /* PPRE2 APB1 not divided */
+  /* Set APB1 */
+  RCC->RCC_CFGR &= ~(1u<<10u);  /* PPRE2 APB1 not divided */
+  #ifdef APB1_Div_2
   RCC->RCC_CFGR |= (4u<<10u);   /* PPRE2 APB1 /2 */
+  #endif
+  #ifdef APB1_Div_4
+  RCC->RCC_CFGR |= (5u<<10u);   /* PPRE2 APB1 /4 */
+  #endif
+  #ifdef APB1_Div_8
+  RCC->RCC_CFGR |= (6u<<10u);   /* PPRE2 APB1 /8 */
+  #endif
+  #ifdef APB1_Div_16
+  RCC->RCC_CFGR |= (7u<<10u);   /* PPRE2 APB1 /16 */
+  #endif
 
+  /* Set APB2 */
   RCC->RCC_CFGR &= ~(1u<<13u);  /* PPRE2 APB2 not divided */
+  #ifdef APB2_Div_2
+  RCC->RCC_CFGR |= (4u<<13u);   /* PPRE2 APB2 /2 */
+  #endif
+  #ifdef APB2_Div_4
+  RCC->RCC_CFGR |= (5u<<13u);   /* PPRE2 APB2 /4 */
+  #endif
+  #ifdef APB2_Div_8
+  RCC->RCC_CFGR |= (6u<<13u);   /* PPRE2 APB2 /8 */
+  #endif
+  #ifdef APB2_Div_16
+  RCC->RCC_CFGR |= (7u<<13u);   /* PPRE2 APB2 /16 */
+  #endif
+
+  /* Set AHB */
   RCC->RCC_CFGR &= ~(0xFu<<4u); /* HPRE AHB prescaler not divided */
+  #ifdef AHB_Div_2
+  RCC->RCC_CFGR |= (8u<<4u); /* HPRE AHB /2 */
+  #endif
+  #ifdef AHB_Div_4
+  RCC->RCC_CFGR |= (9u<<4u); /* HPRE AHB /4 */
+  #endif
+  #ifdef AHB_Div_8
+  RCC->RCC_CFGR |= (10u<<4u); /* HPRE AHB /8 */
+  #endif
+  #ifdef AHB_Div_16
+  RCC->RCC_CFGR |= (11u<<4u); /* HPRE AHB /16 */
+  #endif
+  #ifdef AHB_Div_64
+  RCC->RCC_CFGR |= (12u<<4u); /* HPRE AHB /64 */
+  #endif
+  #ifdef AHB_Div_128
+  RCC->RCC_CFGR |= (13u<<4u); /* HPRE AHB /128 */
+  #endif
+  #ifdef AHB_Div_256
+  RCC->RCC_CFGR |= (14u<<4u); /* HPRE AHB /256 */
+  #endif
+  #ifdef AHB_Div_512
+  RCC->RCC_CFGR |= (15u<<4u); /* HPRE AHB /512 */
+  #endif
 	
 	RCC->RCC_CFGR |= (1u<<0);   /* SW Select HSE */
   RCC->RCC_CR &= ~(1u << 0);  /* Disable HSI */
@@ -107,4 +171,16 @@ void Enable_Disable_Clock_PortG(const unsigned char Status)
 {
   if(Status==Enable) SETBIT(RCC->RCC_APB2ENR,1u,8);
   else CLEARBIT(RCC->RCC_APB2ENR,1u,8);
+}
+
+void I2C1_EnableClock(const unsigned char Status)
+{
+  if(Status==Enable) RCC->RCC_APB1ENR |= (1u<<21);
+  else RCC->RCC_APB1ENR &= ~(1u<<21);
+}
+
+void I2C2_EnableClock(const unsigned char Status)
+{
+  if(Status==Enable) RCC->RCC_APB1ENR |= (1u<<22);
+  else RCC->RCC_APB1ENR &= ~(1u<<22);
 }

@@ -28,6 +28,21 @@ typedef struct
   volatile unsigned int DMAR;
 }TIM2to5_typedef;
 
+#define TIM1_BASE_ADDRESS 			((uint32_t)0x40022C00u)
+#define TIM2_BASE_ADDRESS 			((uint32_t)0x40000000u)
+#define TIM3_BASE_ADDRESS 			((uint32_t)0x40000400u)
+#define TIM4_BASE_ADDRESS 			((uint32_t)0x40000800u)
+#define TIM5_BASE_ADDRESS 			((uint32_t)0x40000C00u)
+#define TIM6_BASE_ADDRESS 			((uint32_t)0x40001000u)
+#define TIM7_BASE_ADDRESS 			((uint32_t)0x40001400u)
+#define TIM8_BASE_ADDRESS 			((uint32_t)0x40013400u)
+#define TIM9_BASE_ADDRESS 			((uint32_t)0x40014C00u)
+#define TIM10_BASE_ADDRESS 			((uint32_t)0x40015000u)
+#define TIM11_BASE_ADDRESS 			((uint32_t)0x40015400u)
+#define TIM12_BASE_ADDRESS 			((uint32_t)0x40001800u)
+#define TIM13_BASE_ADDRESS 			((uint32_t)0x40001C00u)
+#define TIM14_BASE_ADDRESS 			((uint32_t)0x40002000u)
+
 #define TIM2 ((TIM2to5_typedef *)TIM2_BASE_ADDRESS)
 #define TIM3 ((TIM2to5_typedef *)TIM3_BASE_ADDRESS)
 #define TIM4 ((TIM2to5_typedef *)TIM4_BASE_ADDRESS)

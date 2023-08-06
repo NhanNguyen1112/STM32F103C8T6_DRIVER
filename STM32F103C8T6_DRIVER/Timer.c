@@ -16,34 +16,37 @@ void Main_TIM2_BASE(void)
   InitClockHSE();
 
 	Enable_Disable_Clock_PortC(Enable);
-	SetPinOutput(PORTC,PIN13,0);
-	WritePin(PORTC,PIN13,HIGH);
+	SetPinOutput(PORTC,PIN13,PushPull);
+	WritePin(PORTC,PIN13,LOW);
 
-	Init_TIM2();
+	Init_TIM2_Delay();
 
 	while (1)
 	{
-		TIM2_Function(10000,&Function_Test);
+    Function_Test();
+    Delay_TIM2_us(5);
+    //Delay_TIM2_ms(5000);
 	}
 }
 
-void Init_TIM2(void)
+void Init_TIM2_Delay(void)
 {
   unsigned int CR1=0;
 
   RCC->RCC_APB1ENR |= (1u<<0); /* Enable clock TIM2 */
 
-  TIM2->PSC = 1u; /* Prescaler = (1-1)+1 = 2 -> 72mhz/2=36mhz */
+  TIM2->PSC = 0u; /* Prescaler = (0-1)+1 = 0 -> 72mhz/0 = 72mhz */
 
-  /* SYSCLK=72Mhz -> 1ms= 36mhz/0.001 */
-  TIM2->ARR = (uint16_t)36000u - 1u;
+  /* SYSCLK=72Mhz -> ARR=1us -> 72.000.000*0,000001= 72 tick */
+  TIM2->ARR = 72u;
 
   TIM2->CNT = 0; /* Reset counter */
 
-  TIM2->DIER |= (1<<0); /* UIE: Update interrupt enable */
+  TIM2->DIER |= (1<<0);  /* UIE: Update interrupt enable */
   TIM2->SR &= ~(1u<<0);  /* UIF: Clear UIF update interrupt flag */
 
-  NVIC->ISER[0] = (1u<<28); /* Enable interupt */
+  NVIC_ClearPendingFlag(TIM2_IRQn); /* Clear Pending */
+  NVIC_EnableInterrupt(TIM2_IRQn); 	/* Enable interupt */
 
   CR1 &= ~(1u<<4); 	/* DIR set Up counter */
   CR1 |= (1u<<0); 	/* enable counter */
@@ -52,13 +55,17 @@ void Init_TIM2(void)
   TIM2->EGR = 0x01u; /* UG Re-initialize the counter and generates an update of the registers */
 }
 
-void TIM2_Function(const unsigned int MiliSeconds, CALLBACK Function)
+void Delay_TIM2_ms(const unsigned int MiliSeconds)
 {
-  if(Count>=MiliSeconds)
-	{
-		Function();
-		Count=0;		
-	}
+  unsigned int MicroSeconds = MiliSeconds*1000;
+  while(Count<=MicroSeconds);
+  Count=0;
+}
+
+void Delay_TIM2_us(const unsigned int MicroSeconds)
+{
+  while(Count<=(MicroSeconds));
+  Count=0;
 }
 
 void TIM2_IRQHandler(void)
@@ -79,40 +86,35 @@ void Main_TIM2_PWM(void)
   InitClockHSE();
 
   Enable_Disable_Clock_PortA(Enable);
-  Init_TIM2_CH1_PA0();
+  SetPinOutput(PORTA,PIN0,Alternate_PushPull);
+	
+  Init_TIM2_PWM_CH1_PA0();
 
   while(1)
   {
     for( unsigned int i=0; i<=99; i++)
     {
-      TIM2->CCR1 = (unsigned int)((i*100u)/100u);
-      for( unsigned int d=0; d<=1000; d++);
+      TIM2_PWM_OUTPUT(i);
+      for( unsigned int d=0; d<=100000; d++);
     }
-		
-    //TIM2->CCR1 = (unsigned int)((100*100u)/100u);
-		// for( unsigned int m=0; m<=500000; m++);
 		
     for( unsigned int n=99; n>0; n--)
     {
-      TIM2->CCR1 = (unsigned int)((n*100u)/100u);
-      for( unsigned int j=0; j<=1000; j++);
+      TIM2_PWM_OUTPUT(n);
+      for( unsigned int j=0; j<=100000; j++);
     }
     
   }
 }
 
-void Init_TIM2_CH1_PA0(void)
+void Init_TIM2_PWM_CH1_PA0(void)
 {
   unsigned int CR1=0;
 
-  GPIO_A->GPIO_CRL &= ~(0xFu<<0); /* Clear */ 
-  GPIO_A->GPIO_CRL |= (3u<<0); 		/* MODE: Output 50Mhz */
-  GPIO_A->GPIO_CRL |= (2u<<2); 		/* CNF: ALT PUSH PULL */
-
   RCC->RCC_APB1ENR |= (1u<<0); /* Enable clock TIM2 */
 
-  TIM2->PSC = 720u - 1u;  					/* Prescaler = 72mhz/72000 = 1.000hz*/
-  TIM2->ARR = (uint16_t)100u - 1u; 	/* 10.000Hz */
+  TIM2->PSC = PSC_TIM2_PWM - 1u;  					/* Prescaler = (72.000.000hz/1000hz)/100 = 720hz*/
+  TIM2->ARR = (uint16_t)(ARR_TIM2_PWM - 1u); 	/* 1000Hz */
 
   TIM2->CNT = 0;
 
@@ -130,6 +132,11 @@ void Init_TIM2_CH1_PA0(void)
   TIM2->CR1 = CR1;  
 
   TIM2->EGR = 0x01u; /* UG Re-initialize the counter and generates an update of the registers */
+}
+
+void TIM2_PWM_OUTPUT(const unsigned int Value)
+{
+  TIM2->CCR1 = (unsigned int)((Value*ARR_TIM2_PWM)/100u);
 }
 
 

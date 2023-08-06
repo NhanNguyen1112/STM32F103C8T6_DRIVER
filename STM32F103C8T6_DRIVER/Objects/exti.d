@@ -1,2 +1,4 @@
-./objects/exti.o: EXTI.c EXTI.h STM32F103C8T6_Register.h GPIO.h CLOCK.h \
-  SYSTICK.h Softtimer.h Timer.h Timer_Register.h
+./objects/exti.o: EXTI.c EXTI.h STM32F103C8T6_Register.h GPIO.h \
+  Gpio_Register.h CLOCK.h Clock_Register.h SYSTICK.h SYSTICK_Register.h \
+  Softtimer.h Timer.h Timer_Register.h USART.h USART_Register.h NVIC.h \
+  NVIC_Register.h EXTI_Register.h

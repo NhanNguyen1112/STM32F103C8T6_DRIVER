@@ -22,55 +22,270 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\CODE\STM\STM32F103C8T6_DRIVER\STM32F103C8T6.uvprojx
-Project File Date:  08/03/2023
+Project File Date:  08/06/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
+Rebuild target 'Target 1'
+CLOCK.c(2): warning: In file included from...
+./CLOCK.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+CLOCK.c(2): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+2 warnings generated.
+compiling CLOCK.c...
+EXTI.c(2): warning: In file included from...
+./EXTI.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+EXTI.c(2): warning: In file included from...
+./EXTI.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+EXTI.c(7): warning: function 'MainTestEXTI' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+3 warnings generated.
+compiling EXTI.c...
+main.c(2): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+main.c(2): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(7): warning: // comments are not allowed in this language [-Wcomment]
+        //Main_TIM2_PWM();
+        ^
+3 warnings generated.
+compiling main.c...
+assembling startup_stm32f10x_md.s...
+Softtimer.c(2): warning: In file included from...
+./Softtimer.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+Softtimer.c(2): warning: In file included from...
+./Softtimer.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+Softtimer.c(2): warning: In file included from...
+./Softtimer.h(24): warning: padding struct 'struct Softtimer' with 3 bytes to align 'TimeoutValue' [-Wpadded]
+  unsigned int TimeoutValue;
+               ^
+Softtimer.c(24): warning: function 'Main_Function' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+4 warnings generated.
+compiling Softtimer.c...
+NVIC.c(2): warning: In file included from...
+./NVIC.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+NVIC.c(2): warning: In file included from...
+./NVIC.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+NVIC.c(2): warning: In file included from...
+./NVIC.h(6): warning: In file included from...
+./NVIC_Register.h(21): warning: padding struct 'NVIC_Typedef' with 3 bytes to align 'STIR' [-Wpadded]
+  volatile unsigned int STIR;          
+                        ^
+NVIC.c(21): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  NVIC->IPR[IRQ_number/4] |= (priority << (8 *(IRQ_number % 4) + 4));
+                          ~~  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+compiling NVIC.c...
 Timer.c(2): warning: In file included from...
 ./Timer.h(5): warning: In file included from...
 ./Timer_Register.h(5): warning: In file included from...
 ./STM32F103C8T6_Register.h(9): warning: In file included from...
-./CLOCK.h(16): warning: // comments are not allowed in this language [-Wcomment]
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
 //#define PA8_MCO
 ^
 Timer.c(2): warning: In file included from...
 ./Timer.h(5): warning: In file included from...
 ./Timer_Register.h(5): warning: In file included from...
-./STM32F103C8T6_Register.h(131): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
-        Alternate_OpenDrain,
-                           ^
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+Timer.c(28): warning: // comments are not allowed in this language [-Wcomment]
+    //Delay_TIM2_ms(5000);
+    ^
 Timer.c(15): warning: function 'Main_TIM2_BASE' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
 {
 ^
-Timer.c(86): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
-    for( unsigned int i=0; i<=99; i++)
-         ^
-Timer.c(86): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
-Timer.c(89): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
-      for( unsigned int d=0; d<=1000; d++);
-           ^
-Timer.c(89): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
-Timer.c(92): warning: // comments are not allowed in this language [-Wcomment]
-    //TIM2->CCR1 = (unsigned int)((100*100u)/100u);
-    ^
 Timer.c(95): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
-    for( unsigned int n=99; n>0; n--)
+    for( unsigned int i=0; i<=99; i++)
          ^
 Timer.c(95): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
 Timer.c(98): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
-      for( unsigned int j=0; j<=1000; j++);
+      for( unsigned int d=0; d<=100000; d++);
            ^
 Timer.c(98): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
-Timer.c(78): warning: function 'Main_TIM2_PWM' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+Timer.c(101): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for( unsigned int n=99; n>0; n--)
+         ^
+Timer.c(101): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+Timer.c(104): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+      for( unsigned int j=0; j<=100000; j++);
+           ^
+Timer.c(104): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+Timer.c(85): warning: function 'Main_TIM2_PWM' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
 {
 ^
 13 warnings generated.
 compiling Timer.c...
+I2C.c(2): warning: In file included from...
+./I2C.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+I2C.c(2): warning: In file included from...
+./I2C.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+I2C.c(5): warning: no previous prototype for function 'I2C1_SetPin' [-Wmissing-prototypes]
+void I2C1_SetPin(void)
+     ^
+I2C.c(5): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void I2C1_SetPin(void)
+^
+static 
+I2C.c(14): warning: no previous prototype for function 'I2C1_Init' [-Wmissing-prototypes]
+void I2C1_Init(void)
+     ^
+I2C.c(14): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void I2C1_Init(void)
+^
+static 
+4 warnings generated.
+compiling I2C.c...
+SYSTICK.c(2): warning: In file included from...
+./SYSTICK.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+SYSTICK.c(2): warning: In file included from...
+./SYSTICK.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+2 warnings generated.
+compiling SYSTICK.c...
+USART.c(2): warning: In file included from...
+./USART.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+USART.c(2): warning: In file included from...
+./USART.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+USART.c(2): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+USART.c(37): warning: function 'FunctionMainUSART1' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+USART.c(108): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+        sprintf(&databuffer,"%d-%d-%d-%d", sendta.a, sendta.b, sendta.c, sendta.d);
+        ^
+USART.c(108): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+USART.c(108): warning: incompatible pointer types passing 'unsigned char (*)[20]' to parameter of type 'char *' [-Wincompatible-pointer-types]
+        sprintf(&databuffer,"%d-%d-%d-%d", sendta.a, sendta.b, sendta.c, sendta.d);
+                ^~~~~~~~~~~
+USART.c(113): warning: // comments are not allowed in this language [-Wcomment]
+    //USART1_SendData(SenData1,sizeof(SenData1));
+    ^
+USART.c(93): warning: function 'FunctionMainUSART1_INT' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+USART.c(149): warning: passing 'volatile unsigned char *' to parameter of type 'unsigned char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  USART1_SendData(&ReadData,sizeof(ReadData));
+                  ^~~~~~~~~
+./USART.h(12): note: passing argument to parameter 'pTxBuffer' here
+void USART1_SendData(unsigned char *pTxBuffer, unsigned int Len);
+                                    ^
+USART.c(12): warning: no previous extern declaration for non-static variable 'sendta' [-Wmissing-variable-declarations]
+data sendta;
+     ^
+USART.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+data sendta;
+^
+10 warnings generated.
+compiling USART.c...
+GPIO.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(43): warning: // comments are not allowed in this language [-Wcomment]
+//#define PA8_MCO
+^
+GPIO.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(14): warning: In file included from...
+./USART.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+GPIO.c(173): warning: declaration shadows a variable in the global scope [-Wshadow]
+        unsigned int ReadData;
+                     ^
+./USART.h(8): note: previous declaration is here
+extern volatile unsigned char ReadData;
+                              ^
+3 warnings generated.
+compiling GPIO.c...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+4 warnings generated.
+compiling system_stm32f10x.c...
 linking...
-Program Size: Code=1516 RO-data=252 RW-data=0 ZI-data=1648  
+Program Size: Code=3192 RO-data=252 RW-data=0 ZI-data=1648  
 FromELF: creating hex file...
-".\Objects\STM32F103C8T6.axf" - 0 Error(s), 13 Warning(s).
+".\Objects\STM32F103C8T6.axf" - 0 Error(s), 52 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -98,9 +313,9 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup:1.0.0
       Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
       Include file:  RTE_Driver/Config/RTE_Device.h
       Source file:   Device/Source/system_stm32f10x.c
-      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
 Build Time Elapsed:  00:00:00
 </pre>
 </body>

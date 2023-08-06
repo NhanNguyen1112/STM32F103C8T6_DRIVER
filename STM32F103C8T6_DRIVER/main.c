@@ -3,6 +3,10 @@
 
 int main(void)
 {
-		Main_TIM2_PWM();
+	Main_TIM2_BASE();
+	//Main_TIM2_PWM();
+	//FunctionMainUSART1();
+	//FunctionMainUSART1_INT();
+	//MainTestEXTI();
 }
 
