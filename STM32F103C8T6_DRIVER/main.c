@@ -3,7 +3,8 @@
 
 int main(void)
 {
-	Main_TIM2_BASE();
+	Main_I2C1_Test();
+	//Main_TIM2_BASE();
 	//Main_TIM2_PWM();
 	//FunctionMainUSART1();
 	//FunctionMainUSART1_INT();

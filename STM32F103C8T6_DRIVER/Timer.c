@@ -64,7 +64,7 @@ void Delay_TIM2_ms(const unsigned int MiliSeconds)
 
 void Delay_TIM2_us(const unsigned int MicroSeconds)
 {
-  while(Count<=(MicroSeconds));
+  while(Count<=(MicroSeconds-1));
   Count=0;
 }
 

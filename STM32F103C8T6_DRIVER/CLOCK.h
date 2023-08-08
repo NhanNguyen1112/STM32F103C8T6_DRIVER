@@ -18,9 +18,9 @@
 #define PLLMUL_X9
 /*#define PLLMUL_X6_5*/
 
-#define APB1_Not_Div
-/*#define APB1_Div_2
-#define APB1_Div_4
+//#define APB1_Not_Div
+#define APB1_Div_2
+/*#define APB1_Div_4
 #define APB1_Div_8
 #define APB1_Div_16*/
 

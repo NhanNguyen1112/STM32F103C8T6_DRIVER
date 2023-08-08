@@ -1,11 +1,11 @@
 Dependencies for Project 'STM32F103C8T6', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6190000::V6.19::ARMCLANG
-F (.\STM32F103C8T6_Register.h)(0x64CFCBB2)()
-F (.\main.c)(0x64CFB438)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+F (.\STM32F103C8T6_Register.h)(0x64D1D4CD)()
+F (.\main.c)(0x64D1D4BC)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -18,10 +18,12 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 F (.\GPIO.c)(0x64CE6B09)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/gpio.o -MD)
 I (GPIO.h)(0x64CE6AF9)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
-I (CLOCK.h)(0x64CFCA5A)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -34,12 +36,14 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 I (Gpio_Register.h)(0x64CE83F6)
 F (.\GPIO.h)(0x64CE6AF9)()
 F (.\Gpio_Register.h)(0x64CE83F6)()
 F (.\CLOCK.c)(0x64CFCB03)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/clock.o -MD)
-I (CLOCK.h)(0x64CFCA5A)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (CLOCK.h)(0x64D1F5B7)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
 I (EXTI.h)(0x64CF2145)
@@ -53,15 +57,17 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 I (Clock_Register.h)(0x64CE83EA)
-F (.\CLOCK.h)(0x64CFCA5A)()
+F (.\CLOCK.h)(0x64D1F5B7)()
 F (.\Clock_Register.h)(0x64CE83EA)()
 F (.\EXTI.c)(0x64CF22B8)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/exti.o -MD)
 I (EXTI.h)(0x64CF2145)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (SYSTICK.h)(0x64CF6A8C)
 I (SYSTICK_Register.h)(0x64CF6ACD)
@@ -72,15 +78,17 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 I (EXTI_Register.h)(0x64CF146F)
 F (.\EXTI.h)(0x64CF2145)()
 F (.\EXTI_Register.h)(0x64CF146F)()
 F (.\Softtimer.c)(0x64CF69A4)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/softtimer.o -MD)
 I (Softtimer.h)(0x64CF6A6B)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -92,13 +100,15 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 F (.\Softtimer.h)(0x64CF6A6B)()
 F (.\SYSTICK.c)(0x64CF6AB1)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/systick.o -MD)
 I (SYSTICK.h)(0x64CF6A8C)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -109,16 +119,18 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 I (SYSTICK_Register.h)(0x64CF6ACD)
 F (.\SYSTICK.h)(0x64CF6A8C)()
 F (.\SYSTICK_Register.h)(0x64CF6ACD)()
-F (.\Timer.c)(0x64CFCB32)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
+F (.\Timer.c)(0x64D20F51)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
 I (Timer.h)(0x64CFBF00)
 I (Timer_Register.h)(0x64CDC70B)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -129,14 +141,16 @@ I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 F (.\Timer.h)(0x64CFBF00)()
 F (.\Timer_Register.h)(0x64CDC70B)()
 F (.\USART.c)(0x64CF2546)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/usart.o -MD)
 I (USART.h)(0x64CE6684)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -147,15 +161,17 @@ I (Timer.h)(0x64CFBF00)
 I (Timer_Register.h)(0x64CDC70B)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 I (USART_Register.h)(0x64CE6686)
 F (.\USART.h)(0x64CE6684)()
 F (.\USART_Register.h)(0x64CE6686)()
 F (.\NVIC.c)(0x64CE8539)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/nvic.o -MD)
 I (NVIC.h)(0x64CFC0C3)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
@@ -166,17 +182,19 @@ I (Timer.h)(0x64CFBF00)
 I (Timer_Register.h)(0x64CDC70B)
 I (USART.h)(0x64CE6684)
 I (USART_Register.h)(0x64CE6686)
+I (I2C.h)(0x64D1D47B)
+I (I2C_Register.h)(0x64CF716F)
 I (NVIC_Register.h)(0x64CF193F)
 F (.\NVIC.h)(0x64CFC0C3)()
 F (.\NVIC_Register.h)(0x64CF193F)()
-F (.\I2C.h)(0x64CF6DE1)()
+F (.\I2C.h)(0x64D1D47B)()
 F (.\I2C_Register.h)(0x64CF716F)()
-F (.\I2C.c)(0x64CF6F16)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/i2c.o -MD)
-I (I2C.h)(0x64CF6DE1)
-I (STM32F103C8T6_Register.h)(0x64CFCBB2)
+F (.\I2C.c)(0x64D21448)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/i2c.o -MD)
+I (I2C.h)(0x64D1D47B)
+I (STM32F103C8T6_Register.h)(0x64D1D4CD)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
-I (CLOCK.h)(0x64CFCA5A)
+I (CLOCK.h)(0x64D1F5B7)
 I (Clock_Register.h)(0x64CE83EA)
 I (EXTI.h)(0x64CF2145)
 I (EXTI_Register.h)(0x64CF146F)
