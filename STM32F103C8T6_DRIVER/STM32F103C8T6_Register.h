@@ -14,6 +14,8 @@
 #include "USART.h"
 #include "NVIC.h"
 #include "I2C.h"
+#include "PCF8574.h"
+#include "SPI.h"
 /*================================================================================================*/
 
 /*==================================================================================================
@@ -132,10 +134,6 @@ typedef enum
 #define ADC1_BASE_ADDRESS 			((uint32_t)0x40022400u)
 #define ADC2_BASE_ADDRESS 			((uint32_t)0x40022800u)
 #define ADC3_BASE_ADDRESS 			((uint32_t)0x40023C00u)
-
-#define SPI1_BASE_ADDRESS 			((uint32_t)0x40013000u)
-#define SPI2_I2S_BASE_ADDRESS 	((uint32_t)0x40003800u)
-#define SPI3_I2S_BASE_ADDRESS 	((uint32_t)0x40003C00u)
 
 /*================================================================================================*/
 

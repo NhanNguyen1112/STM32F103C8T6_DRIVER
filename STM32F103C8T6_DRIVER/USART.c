@@ -146,6 +146,7 @@ void USART1_IRQHandler(void)
 {
   ReadData = (unsigned char)(USART1->DR & (0xFFu<<0));
 
+  /* Test sau khi read thi gui lai Data vua read len TX */
   USART1_SendData(&ReadData,sizeof(ReadData));
 
   NVIC_ClearPendingFlag(USART1_IRQn); /* interrupt clear pending USART1 */

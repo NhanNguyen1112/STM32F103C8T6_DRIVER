@@ -57,6 +57,8 @@ void Enable_Disable_Clock_PortD(const unsigned char Status);
 void Enable_Disable_Clock_PortE(const unsigned char Status);
 void Enable_Disable_Clock_PortF(const unsigned char Status);
 void Enable_Disable_Clock_PortG(const unsigned char Status);
+void Clock_AFIO(const unsigned char Status);
+void Clock_SPI1(const unsigned char Status);
 void I2C1_EnableClock(const unsigned char Status);
 void I2C2_EnableClock(const unsigned char Status);
 

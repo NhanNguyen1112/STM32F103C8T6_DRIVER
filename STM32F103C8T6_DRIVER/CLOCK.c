@@ -173,6 +173,18 @@ void Enable_Disable_Clock_PortG(const unsigned char Status)
   else CLEARBIT(RCC->RCC_APB2ENR,1u,8);
 }
 
+void Clock_AFIO(const unsigned char Status)
+{
+  if(Status==Enable) RCC->RCC_APB2ENR |= (1<<0);
+  else RCC->RCC_APB2ENR &= ~(1u<<0);
+}
+
+void Clock_SPI1(const unsigned char Status)
+{
+  if(Status==Enable) RCC->RCC_APB2ENR |= (1<<12);
+  else RCC->RCC_APB2ENR &= ~(1u<<12);
+}
+
 void I2C1_EnableClock(const unsigned char Status)
 {
   if(Status==Enable) RCC->RCC_APB1ENR |= (1u<<21);

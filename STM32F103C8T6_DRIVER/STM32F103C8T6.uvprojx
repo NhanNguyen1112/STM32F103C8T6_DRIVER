@@ -567,6 +567,76 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>PCF8574_I2C</GroupName>
+          <Files>
+            <File>
+              <FileName>PCF8574.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\PCF8574.c</FilePath>
+            </File>
+            <File>
+              <FileName>PCF8574.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\PCF8574.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DS1307_I2C</GroupName>
+          <Files>
+            <File>
+              <FileName>DS1307.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\DS1307.c</FilePath>
+            </File>
+            <File>
+              <FileName>DS1307.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\DS1307.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SPI</GroupName>
+          <Files>
+            <File>
+              <FileName>SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPI.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SPI.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SPI_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ADC</GroupName>
+          <Files>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ADC_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
