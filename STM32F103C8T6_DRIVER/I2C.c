@@ -126,7 +126,7 @@ static unsigned char I2C1_Read(I2C_Acknowledge_Type acknowledge)
 	return ((unsigned char)I2C1->DR);
 }
 
-void I2C1_WriteMultiData(unsigned char *Data, const unsigned char size)
+static void I2C1_WriteMultiData(unsigned char *Data, const unsigned char size)
 {
   unsigned char Count=0;
 
@@ -160,6 +160,15 @@ void I2C1_SendMultiData(const unsigned char Address, unsigned char *Data, unsign
   I2C1_Stop();
 }
 
+void I2C1_WriteMEM(const unsigned char AddressI2C, const unsigned char AddressMEM, unsigned char *Data, unsigned char size)
+{
+  I2C1_Start();
+  I2C1_SendAdress(AddressI2C,I2C_TRANSMITTER);
+	I2C1_Write(AddressMEM);
+  I2C1_WriteMultiData(Data,size);
+  I2C1_Stop();
+}
+
 unsigned char I2C1_ReadData(const unsigned char Address, I2C_Acknowledge_Type acknowledge)
 {
 	I2C1_Start();
@@ -167,6 +176,29 @@ unsigned char I2C1_ReadData(const unsigned char Address, I2C_Acknowledge_Type ac
 	I2C1_Stop();
 
 	return I2C1_Read(acknowledge);
+}
+
+void I2C1_ReadMEM(const unsigned char AddressI2C, const unsigned char AddressMEM, \
+									unsigned char *DataRead, unsigned char size, I2C_Acknowledge_Type acknowledge)
+{
+	unsigned char i=0;
+
+	I2C1_Start();
+	I2C1_SendAdress(AddressI2C,I2C_TRANSMITTER);
+	I2C1_Write(AddressMEM);
+	I2C1_Stop();
+
+	I2C1_Start();
+
+	I2C1_SendAdress(AddressI2C,I2C_RECEIVER);
+	for(i=0; i<size; i++)
+	{
+		*DataRead = I2C1_Read(acknowledge);
+		DataRead++;
+	}
+	i = I2C1_Read(I2C_NACK);
+
+	I2C1_Stop();
 }
 
 

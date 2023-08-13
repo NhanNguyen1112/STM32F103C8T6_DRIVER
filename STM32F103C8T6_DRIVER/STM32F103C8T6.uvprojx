@@ -582,21 +582,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>DS1307_I2C</GroupName>
-          <Files>
-            <File>
-              <FileName>DS1307.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\DS1307.c</FilePath>
-            </File>
-            <File>
-              <FileName>DS1307.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\DS1307.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>SPI</GroupName>
           <Files>
             <File>
@@ -633,6 +618,21 @@
               <FileName>ADC_Register.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\ADC_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DS3231</GroupName>
+          <Files>
+            <File>
+              <FileName>DS3231.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\DS3231.c</FilePath>
+            </File>
+            <File>
+              <FileName>DS3231.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\DS3231.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -115,6 +115,7 @@ void FunctionMainUSART1_INT(void)
   }
 }
 
+/* PA9-TX ; PA10-RX*/
 void USART1_Setup_INT_RX(void)
 {
   Setup_GPIO_PA9TX_PA10RX();
