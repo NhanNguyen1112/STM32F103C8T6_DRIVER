@@ -196,3 +196,64 @@ void I2C2_EnableClock(const unsigned char Status)
   if(Status==Enable) RCC->RCC_APB1ENR |= (1u<<22);
   else RCC->RCC_APB1ENR &= ~(1u<<22);
 }
+
+void DMA1_EnableClock(const unsigned char Status)
+{
+  if(Status==Enable) RCC->RCC_AHBENR |= (1u<<0);
+  else RCC->RCC_AHBENR &= ~(1u<<0);
+}
+
+void DMA2_EnableClock(const unsigned char Status)
+{
+  if(Status==Enable) RCC->RCC_AHBENR |= (1u<<1);
+  else RCC->RCC_AHBENR &= ~(1u<<1);
+}
+
+/*  
+  DIV 2,4,6,8 
+  ADC: 1-ADC1 , 2-ADC2 , 0-ADC1 & ADC2
+*/
+void ADC_EnableClock(const unsigned char ADC, const unsigned char Status, const unsigned char DIV)
+{
+  RCC->RCC_CFGR &= ~(3u<<14);
+  if(DIV==4) RCC->RCC_CFGR |= (1u<<14);
+  else if (DIV==6) RCC->RCC_CFGR |= (2u<<14);
+  else if (DIV==8) RCC->RCC_CFGR |= (3u<<14);
+  else {}
+
+  if(ADC==1)
+  {
+    if(Status==Enable) RCC->RCC_APB2ENR |= (1u<<9);
+    else RCC->RCC_APB2ENR &= ~(1u<<9);
+  }
+  else if(ADC==2)
+  {
+    if(Status==Enable) RCC->RCC_APB2ENR |= (1u<<10);
+    else RCC->RCC_APB2ENR &= ~(1u<<10);
+  }
+  else 
+  {
+    if(Status==Enable)
+    {
+      RCC->RCC_APB2ENR |= (1u<<9);
+      RCC->RCC_APB2ENR |= (1u<<10);
+    } 
+    else
+    {
+      RCC->RCC_APB2ENR &= ~(1u<<9);
+      RCC->RCC_APB2ENR &= ~(1u<<10);
+    } 
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

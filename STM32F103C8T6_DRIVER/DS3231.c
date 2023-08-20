@@ -10,11 +10,11 @@ void DS3231_MAIN_TEST(void)
   InitClockHSE(); /* 72Mhz */
   USART1_Setup_INT_RX();
   Init_TIM2_Delay();
-  I2C1_Init(I2C_FAST);
+  I2C1_Init(I2C_STANDARD);
 
   DS3231_Init(0xD0);
 	
-	// DS3231_SetTime(2,13,8,23,9,27,23);
+	//DS3231_SetTime(2,13,8,23,9,27,23);
 
   unsigned char databuffer[50]={0};
 

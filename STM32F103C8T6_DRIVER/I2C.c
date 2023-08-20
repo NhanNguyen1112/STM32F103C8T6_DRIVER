@@ -189,7 +189,6 @@ void I2C1_ReadMEM(const unsigned char AddressI2C, const unsigned char AddressMEM
 	I2C1_Stop();
 
 	I2C1_Start();
-
 	I2C1_SendAdress(AddressI2C,I2C_RECEIVER);
 	for(i=0; i<size; i++)
 	{
@@ -197,7 +196,6 @@ void I2C1_ReadMEM(const unsigned char AddressI2C, const unsigned char AddressMEM
 		DataRead++;
 	}
 	i = I2C1_Read(I2C_NACK);
-
 	I2C1_Stop();
 }
 

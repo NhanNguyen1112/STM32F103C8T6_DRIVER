@@ -50,6 +50,7 @@
 /*===========================================================*/
 
 void InitClockHSE(void);
+
 void Enable_Disable_Clock_PortA(const unsigned char Status);
 void Enable_Disable_Clock_PortB(const unsigned char Status);
 void Enable_Disable_Clock_PortC(const unsigned char Status);
@@ -61,6 +62,9 @@ void Clock_AFIO(const unsigned char Status);
 void Clock_SPI1(const unsigned char Status);
 void I2C1_EnableClock(const unsigned char Status);
 void I2C2_EnableClock(const unsigned char Status);
+void DMA1_EnableClock(const unsigned char Status);
+void DMA2_EnableClock(const unsigned char Status);
+void ADC_EnableClock(const unsigned char ADC, const unsigned char Status, const unsigned char DIV);
 
 #endif
 

@@ -5,10 +5,9 @@
 #include "STM32F103C8T6_Register.h"
 #include "USART_Register.h"
 
+extern unsigned char BufferRead[20];
 extern volatile unsigned char ReadData;
 
-void Setup_GPIO_PA9TX_PA10RX(void);
-void USART1_Init_CLK(void);
 void USART1_SendData(unsigned char *pTxBuffer, unsigned int Len);
 
 /* Polling */
@@ -20,5 +19,9 @@ void USART1_ReceiveData(unsigned char *pRxBuffer, unsigned int Len);
 void FunctionMainUSART1_INT(void);
 void USART1_Setup_INT_RX(void);
 void USART1_IRQHandler(void);
+
+/* Use DMA */
+void MAIN_UART1_DMA(void);
+void UART1_DMA_Init(void);
 
 #endif

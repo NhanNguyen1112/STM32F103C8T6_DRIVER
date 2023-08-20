@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -633,6 +633,41 @@
               <FileName>DS3231.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\DS3231.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DMA</GroupName>
+          <Files>
+            <File>
+              <FileName>DMA.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\DMA.c</FilePath>
+            </File>
+            <File>
+              <FileName>DMA.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\DMA.h</FilePath>
+            </File>
+            <File>
+              <FileName>DMA_Register.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\DMA_Register.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>String</GroupName>
+          <Files>
+            <File>
+              <FileName>String.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\String.c</FilePath>
+            </File>
+            <File>
+              <FileName>String.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\String.h</FilePath>
             </File>
           </Files>
         </Group>
