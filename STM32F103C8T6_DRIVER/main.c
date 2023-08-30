@@ -3,7 +3,8 @@
 
 int main(void)
 {
-	MAIN_UART1_DMA();
+	UART_V2_MAIN_TEST();
+	//MAIN_UART1_DMA();
 
 	//ADC_MAIN_TEST();
 	// DMA_MAIN_TEST();

@@ -3,4 +3,4 @@
   SYSTICK.h SYSTICK_Register.h Timer.h Timer_Register.h USART.h \
   USART_Register.h NVIC.h NVIC_Register.h I2C.h I2C_Register.h PCF8574.h \
   SPI.h SPI_Register.h ADC.h ADC_Register.h DMA.h DMA_Register.h \
-  String.h
+  String.h UART_V2.h

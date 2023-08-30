@@ -86,7 +86,7 @@ static void I2C1_Stop(void)
 
 static void I2C1_SendAdress(unsigned int Address, I2C_Direction_Type direction)
 {
-	volatile unsigned int temp=0;
+	unsigned int temp=0;
 	
 	if (direction == I2C_TRANSMITTER) 
 	{
@@ -171,11 +171,31 @@ void I2C1_WriteMEM(const unsigned char AddressI2C, const unsigned char AddressME
 
 unsigned char I2C1_ReadData(const unsigned char Address, I2C_Acknowledge_Type acknowledge)
 {
+	unsigned char DataRead=0;
 	I2C1_Start();
 	I2C1_SendAdress(Address,I2C_RECEIVER);
+	DataRead = I2C1_Read(acknowledge);
+	(void)I2C1_Read(I2C_NACK);
 	I2C1_Stop();
 
-	return I2C1_Read(acknowledge);
+	return DataRead;
+}
+
+void I2C1_ReadMultiData(const unsigned char Address, unsigned char *DataRead, unsigned char size, I2C_Acknowledge_Type acknowledge)
+{
+	unsigned char i=0;
+
+	I2C1_Start();
+	I2C1_SendAdress(Address,I2C_RECEIVER);
+
+	for(i=0; i<size; i++)
+	{
+		*DataRead = I2C1_Read(acknowledge);
+		DataRead++;
+	}
+	(void)I2C1_Read(I2C_NACK);
+
+	I2C1_Stop();
 }
 
 void I2C1_ReadMEM(const unsigned char AddressI2C, const unsigned char AddressMEM, \

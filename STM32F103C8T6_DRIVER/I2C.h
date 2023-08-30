@@ -32,6 +32,7 @@ void I2C1_SendData(const unsigned char Address, const unsigned char Data);
 void I2C1_SendMultiData(const unsigned char Address, unsigned char *Data, unsigned char size);
 void I2C1_WriteMEM(const unsigned char AddressI2C, const unsigned char AddressMEM, unsigned char *Data, unsigned char size);
 unsigned char I2C1_ReadData(const unsigned char Address, I2C_Acknowledge_Type acknowledge);
+void I2C1_ReadMultiData(const unsigned char Address, unsigned char *DataRead, unsigned char size, I2C_Acknowledge_Type acknowledge);
 void I2C1_ReadMEM(const unsigned char AddressI2C, const unsigned char AddressMEM, \
 									unsigned char *Data, unsigned char size, I2C_Acknowledge_Type acknowledge);
 

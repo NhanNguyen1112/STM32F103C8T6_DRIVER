@@ -1,7 +1,7 @@
 
 #include "USART.h"
 
-static unsigned int UART1_ReadData(void);
+// static unsigned int UART1_ReadData(void);
 
 typedef struct
 {
@@ -168,17 +168,17 @@ void USART1_Setup_INT_RX(void)
 
 }
 
-void USART1_IRQHandler(void)
-{
-  BufferRead[count] = (unsigned char)(USART1->DR & (0xFFu<<0));
-  count++;
+// void USART1_IRQHandler(void)
+// {
+//   BufferRead[count] = (unsigned char)(USART1->DR & (0xFFu<<0));
+//   count++;
 
-  /* Test sau khi read thi gui lai Data vua read len TX */
-  //ReadData = (unsigned char)(USART1->DR & (0xFFu<<0));
-  //USART1_SendData(&ReadData,sizeof(ReadData));
+//   /* Test sau khi read thi gui lai Data vua read len TX */
+//   //ReadData = (unsigned char)(USART1->DR & (0xFFu<<0));
+//   //USART1_SendData(&ReadData,sizeof(ReadData));
 
-  NVIC_ClearPendingFlag(USART1_IRQn); /* interrupt clear pending USART1 */
-}
+//   NVIC_ClearPendingFlag(USART1_IRQn); /* interrupt clear pending USART1 */
+// }
 
 /*==================================================================================================*/
 

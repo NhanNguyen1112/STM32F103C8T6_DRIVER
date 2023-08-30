@@ -18,5 +18,5 @@ void NVIC_ClearPendingFlag(IRQn_Type IRQ_number)
 
 void NVIC_SetPriority(IRQn_Type IRQ_number, unsigned char priority)
 {
-  NVIC->IPR[IRQ_number/4] |= (priority << (8 *(IRQ_number % 4) + 4));
+  NVIC->IPR[IRQ_number/4] |= ((unsigned int)priority << (8 *(IRQ_number % 4) + 4));
 }

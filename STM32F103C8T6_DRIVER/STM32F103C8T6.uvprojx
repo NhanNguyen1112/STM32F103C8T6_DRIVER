@@ -672,6 +672,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>UART_V2</GroupName>
+          <Files>
+            <File>
+              <FileName>UART_V2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UART_V2.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART_V2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\UART_V2.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
