@@ -46,6 +46,7 @@ void Init_TIM2_Delay(void)
   TIM2->SR &= ~(1u<<0);  /* UIF: Clear UIF update interrupt flag */
 
   NVIC_ClearPendingFlag(TIM2_IRQn); /* Clear Pending */
+  NVIC_SetPriority(SPI1_IRQn,1);
   NVIC_EnableInterrupt(TIM2_IRQn); 	/* Enable interupt */
 
   CR1 &= ~(1u<<4); 	/* DIR set Up counter */

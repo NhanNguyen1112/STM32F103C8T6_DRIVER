@@ -27,7 +27,52 @@ Project File Date:  08/29/2023
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-".\Objects\STM32F103C8T6.axf" - 0 Error(s), 0 Warning(s).
+SPI.c(2): warning: In file included from...
+./SPI.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(9): warning: In file included from...
+./CLOCK.h(21): warning: // comments are not allowed in this language [-Wcomment]
+//#define APB1_Not_Div
+^
+SPI.c(2): warning: In file included from...
+./SPI.h(5): warning: In file included from...
+./STM32F103C8T6_Register.h(17): warning: In file included from...
+./PCF8574.h(17): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PCF8574T_H_ */
+                        ^
+SPI.c(2): warning: In file included from...
+./SPI.h(17): warning: // comments are not allowed in this language [-Wcomment]
+// #define Slave_Config
+^
+SPI.c(13): warning: no previous extern declaration for non-static variable 'Data' [-Wmissing-variable-declarations]
+unsigned short Data=0;
+               ^
+SPI.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned short Data=0;
+^
+SPI.c(20): warning: // comments are not allowed in this language [-Wcomment]
+        //unsigned char ReadData[10]={0};
+        ^
+SPI.c(19): warning: function 'SPI_MAINTEST' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+SPI.c(12): warning: no previous extern declaration for non-static variable 'SPI_ReadData' [-Wmissing-variable-declarations]
+volatile unsigned char SPI_ReadData;
+                       ^
+SPI.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile unsigned char SPI_ReadData;
+         ^
+SPI.c(15): warning: unused variable 'data1' [-Wunused-variable]
+static unsigned char data1[10]= {'H','e','l','l','o'};
+                     ^
+SPI.c(16): warning: unused variable 'data2' [-Wunused-variable]
+static unsigned char data2[10]= {'a','l','o','9','9'};
+                     ^
+9 warnings generated.
+compiling SPI.c...
+linking...
+Program Size: Code=4124 RO-data=252 RW-data=0 ZI-data=1664  
+FromELF: creating hex file...
+".\Objects\STM32F103C8T6.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,10 +99,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
       Include file:  RTE_Driver/Config/RTE_Device.h
       Source file:   Device/Source/ARM/STM32F1xx_OPT.s
-      Source file:   Device/Source/system_stm32f10x.c
-      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
 Build Time Elapsed:  00:00:00
 </pre>
 </body>

@@ -13,8 +13,8 @@
  * MOSI: PA7 (Alternate function push-pull)
  */
 
-// #define Master_Config
-#define Slave_Config
+#define Master_Config
+// #define Slave_Config
 
 //#define Baudrate_Div2              /* Fpclk/2 */
 //#define Baudrate         ((1u<<3)) /* Fpclk/4 */
@@ -25,14 +25,14 @@
 #define Baudrate         ((6u<<3)) /* Fpclk/128 */
 // #define Baudrate         ((7u<<3)) /* Fpclk/256 */
 
-//#define SPI1_16_BIT_FORMAT
-#define SPI1_8_BIT_FORMAT
+#define SPI1_16_BIT_FORMAT
+// #define SPI1_8_BIT_FORMAT
 
 #define SOFT_SLAVE_ENABLE
-//#define SOFT_SLAVE_DISABLE
+// #define SOFT_SLAVE_DISABLE
 
-// #define Full_Duplex
-#define Recieve_Only
+#define Full_Duplex
+// #define Recieve_Only
 
 /*===================================================================*/
 
@@ -45,8 +45,9 @@ void SPI1_EnableSlave(void);
 void SPI1_DisableSlave(void);
 void SPI1_IRQHandler(void);
 
-void SPI1_SendData(unsigned char *Data, const unsigned int Len);
-void SPI1_ReadData(unsigned char *Data, const unsigned int Len);
+void SPI1_Send16bit(unsigned short *DataSend);
+void SPI1_SendData(unsigned char *DataSend, const unsigned int Len);
+void SPI1_ReadData(unsigned char *DataSend, const unsigned int Len);
 
 #endif
 

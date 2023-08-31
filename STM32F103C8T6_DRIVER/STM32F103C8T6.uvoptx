@@ -148,7 +148,24 @@
           <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128 -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint/>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>201</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134219532</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\SPI.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\STM32F103C8T6\SPI.c\201</Expression>
+        </Bp>
+      </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
@@ -163,7 +180,7 @@
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>TestReadData</ItemText>
+          <ItemText>TestReadData,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -233,10 +250,6 @@
       <pMultCmdsp></pMultCmdsp>
       <SystemViewers>
         <Entry>
-          <Name>System Viewer\DMA1</Name>
-          <WinId>35902</WinId>
-        </Entry>
-        <Entry>
           <Name>System Viewer\GPIOA</Name>
           <WinId>35901</WinId>
         </Entry>
@@ -245,7 +258,7 @@
           <WinId>35904</WinId>
         </Entry>
         <Entry>
-          <Name>System Viewer\USART1</Name>
+          <Name>System Viewer\SPI1</Name>
           <WinId>35905</WinId>
         </Entry>
       </SystemViewers>
@@ -701,7 +714,7 @@
 
   <Group>
     <GroupName>SPI</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

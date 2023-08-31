@@ -1,7 +1,7 @@
 Dependencies for Project 'STM32F103C8T6', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6190000::V6.19::ARMCLANG
 F (.\STM32F103C8T6_Register.h)(0x64EDF186)()
-F (.\main.c)(0x64EDF1A5)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+F (.\main.c)(0x64EF0EA0)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
 I (STM32F103C8T6_Register.h)(0x64EDF186)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
@@ -21,7 +21,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -48,7 +48,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -78,7 +78,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -108,7 +108,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -139,7 +139,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -167,7 +167,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -178,7 +178,7 @@ I (UART_V2.h)(0x64EEC72E)
 I (SYSTICK_Register.h)(0x64CF6ACD)
 F (.\SYSTICK.h)(0x64CF6A8C)()
 F (.\SYSTICK_Register.h)(0x64CF6ACD)()
-F (.\Timer.c)(0x64D20F51)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
+F (.\Timer.c)(0x64F013C6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
 I (Timer.h)(0x64CFBF00)
 I (Timer_Register.h)(0x64CDC70B)
 I (STM32F103C8T6_Register.h)(0x64EDF186)
@@ -198,7 +198,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -227,7 +227,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -257,7 +257,7 @@ I (USART_Register.h)(0x64CE6686)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -289,7 +289,7 @@ I (USART_Register.h)(0x64CE6686)
 I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -318,7 +318,7 @@ I (NVIC.h)(0x64CFC0C3)
 I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -327,8 +327,8 @@ I (DMA_Register.h)(0x64DB81C8)
 I (String.h)(0x64E19C4D)
 I (UART_V2.h)(0x64EEC72E)
 F (.\PCF8574.h)(0x64D5C0AB)()
-F (.\SPI.c)(0x64D4FDF3)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/spi.o -MD)
-I (SPI.h)(0x64D4FE78)
+F (.\SPI.c)(0x64F01EDB)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/spi.o -MD)
+I (SPI.h)(0x64F01C82)
 I (STM32F103C8T6_Register.h)(0x64EDF186)
 I (GPIO.h)(0x64CE6AF9)
 I (Gpio_Register.h)(0x64CE83F6)
@@ -355,7 +355,7 @@ I (DMA_Register.h)(0x64DB81C8)
 I (String.h)(0x64E19C4D)
 I (UART_V2.h)(0x64EEC72E)
 I (SPI_Register.h)(0x64D35D8B)
-F (.\SPI.h)(0x64D4FE78)()
+F (.\SPI.h)(0x64F01C82)()
 F (.\SPI_Register.h)(0x64D35D8B)()
 F (.\ADC.c)(0x64DEECF1)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/PC/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/PC/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/adc.o -MD)
 I (ADC.h)(0x64DE39E6)
@@ -378,7 +378,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (DMA.h)(0x64E19E44)
 I (DMA_Register.h)(0x64DB81C8)
@@ -408,7 +408,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -438,7 +438,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
@@ -471,7 +471,7 @@ I (NVIC_Register.h)(0x64CF193F)
 I (I2C.h)(0x64E991B5)
 I (I2C_Register.h)(0x64CF716F)
 I (PCF8574.h)(0x64D5C0AB)
-I (SPI.h)(0x64D4FE78)
+I (SPI.h)(0x64F01C82)
 I (SPI_Register.h)(0x64D35D8B)
 I (ADC.h)(0x64DE39E6)
 I (ADC_Register.h)(0x64DC97FB)
